@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="./output.css" rel="stylesheet">
+   <script src="./js/menuToggle.js" defer type="module">
+   </script>
+</head>
+
+<body>
+   <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+         <div class="text-white text-lg">MyLogo</div>
+         <div class="hidden md:flex space-x-4">
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">Home</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">About</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">Services</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">Contact</a>
+         </div>
+         <div class="md:hidden">
+            <button id="menu-toggle" class="text-gray-300 hover:bg-gray-700 p-2 rounded">
+               Menu
+            </button>
+         </div>
+      </div>
+   </nav>
+
+   <div id="mobile-menu" class="hidden md:hidden">
+      <a href="#" class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">Home</a>
+      <a href="#" class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">About</a>
+      <a href="#" class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">Services</a>
+      <a href="#" class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">Contact</a>
+   </div>
+
+   <script src="./js/menuToggle.js" defer type="module">
+   </script>
+</body>
+
+</html>

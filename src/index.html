@@ -4,20 +4,31 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
    <link href="./output.css" rel="stylesheet">
    <script src="./js/menuToggle.js" defer type="module">
    </script>
 </head>
 
 <body>
-   <nav class="bg-gray-800 p-4">
+   <nav class="bg-blue p-4">
       <div class="container mx-auto flex justify-between items-center">
-         <div class="text-white text-lg">MyLogo</div>
-         <div class="hidden md:flex space-x-4">
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">Home</a>
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">About</a>
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">Services</a>
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">Contact</a>
+         <div class="">
+            <img src="./images/spotlightLogo.png" alt="logo" class="h-8">
+         </div>
+         <div class="hidden md:flex space-x-4 text-sm">
+            <div class="h-12 border-l border-[#677395]"></div>
+
+            <a href="#" class="text-whiteDeep  px-3 py-2 rounded">All Projects</a>
+            <a href="#" class="text-whiteDeep  px-3 py-2 rounded">About us</a>
+            <a href="#" class="text-whiteDeep  px-3 py-2 rounded">Start project</a>
+         </div>
+         <div class="flex gap-9 text-sm">
+            <button class="text-whiteLight hover:bg-gray-700 border-2 border-[#777E90] py-3 px-4 rounded-[10px]">
+               Login
+            </button>
+            <button class="text-whiteLight bg-blueLight py-3 px-4 rounded-[10px]">
+               Create account
          </div>
          <div class="md:hidden">
             <button id="menu-toggle" class="text-gray-300 hover:bg-gray-700 p-2 rounded">
@@ -34,8 +45,51 @@
       <a href="#" class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded">Contact</a>
    </div>
 
-   <script src="./js/menuToggle.js" defer type="module">
-   </script>
+   <div class="bg-cover bg-center w-full" style="background-image: url('./images/BG.png');">
+      <div class="container mx-auto py-12">
+         <div class=" grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col mt-10">
+               <div class="flex flex-col gap-10">
+                  <p class="uppercase text-xs font-bold text-[#FFB49C]">
+                     INVEST smarter. Be part of the future
+                  </p>
+                  <h1 class="text-lg font-bold text-whiteLight">Invest in the future you believe in</h1>
+                  <p class="text-base text-whiteDeep max-w-sm md:pr-12">Access highly-vetted investment opportunities
+                     in movies, documentaries and cinema works</p>
+                  <div class="flex gap-4 text-sm">
+                     <button class="text-whiteLight bg-blueLight py-3 px-4 rounded-[10px]">
+                        Invest now
+                     </button>
+                     <button
+                        class="text-whiteLight hover:bg-gray-700 border-2 border-[#E6E8EC] py-3 px-4 rounded-[10px]">
+                        Start a campaign
+                     </button>
+                  </div>
+               </div>
+               <div class="mt-12">
+                  <img src="./images/circle-button.svg" alt="circle-button" class="">
+               </div>
+               <div class="flex items-center gap-4 mt-12">
+                  <h3 class="text-whiteLight text-[14px] leading-[18.52px] font-medium">FOLLOW US</h3>
+                  <div class="w-8 border-t border-2 border-[#764AF2]"></div>
+                  <div class=" text-white">
+                     <i class="bi bi-facebook"></i>
+                  </div>
+                  <div class=" text-white">
+                     <i class="bi bi-twitter"></i>
+                  </div>
+                  <div class=" text-white">
+                     in<i class="bi bi-linkedn"></i>
+                  </div>
+               </div>
+            </div>
+            <div class="flex justify-center items-center">
+               <img src="./images/heroImg.png" alt="hero" class="">
+            </div>
+         </div>
+      </div>
+      <script src="./js/menuToggle.js" defer type="module">
+      </script>
 </body>
 
 </html>
